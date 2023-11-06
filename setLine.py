@@ -1,10 +1,8 @@
 import cv2
 
 # Replace the URL with your RTSP stream URL
-# RTSP = "10.30.111.201"
-# rtsp_url = f"rtsp://admin:HuaWei123@{RTSP}/LiveMedia/ch1/Media1"
-rtsp_url = f"rtsp://admin:admin12345@10.48.86.54/LiveMedia/ch1/Media1"
-# rtsp://admin:admin12345@10.33.201.201/LiveMedia/ch1/Media1
+RTSP = ""
+rtsp_url = f"rtsp://user:pass@{RTSP}"
 def click_event(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
         print("Coordinates: X: ", x, " Y: ", y)
