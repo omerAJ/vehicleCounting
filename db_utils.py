@@ -2,7 +2,7 @@ import sqlite3
 import datetime
 
 def initialize_database(dbName: str):
-    conn = sqlite3.connect(f"/home/lums/new_folder/vehicle_counting/countingCode/dataLogging/dbs/{dbName}.db")
+    conn = sqlite3.connect(f"path/to/dbs/{dbName}.db")
     c = conn.cursor()
 
     c.execute("DROP TABLE IF EXISTS vehicle_counts")
@@ -25,7 +25,7 @@ def initialize_database(dbName: str):
     conn.close()
 
 def add_reading(dbName: str, reading: dict):
-    conn = sqlite3.connect(f"/home/lums/new_folder/vehicle_counting/countingCode/dataLogging/dbs/{dbName}.db")
+    conn = sqlite3.connect(f"path/to/dbs/{dbName}.db")
     c = conn.cursor()
 
     query = '''INSERT INTO vehicle_counts (date, timeStamp, car, motorcycle, van, rickshaw, bus, truck)
