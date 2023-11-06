@@ -1,6 +1,6 @@
-dbName = "GOV"
+dbName = "name"
 
-RTSP = "10.30.161.131"
+RTSP = ""
 frame_skip = 2
 ## set line coords here.
 x1, y1, x2, y2 = 161, 580, 1886, 600
@@ -38,9 +38,8 @@ sample_reading = {
 db_utils.add_reading(dbName, sample_reading)  # Add sample reading to the database.
 
 
-rtsp_url = f"rtsp://admin:HuaWei123@{RTSP}/LiveMedia/ch1/Media1"
-# path_to_model = "/home/lums/new_folder/vehicle_counting/yolov8n_vehicle_detection.pt"
-path_to_model = "/home/lums/new_folder/vehicle_counting/countingCode/yolov8x_7Classes.pt"
+rtsp_url = f"rtsp://user:pass@{RTSP}"
+path_to_model = "path/to/yolo/weights.pt"
 
 model = YOLO(path_to_model)
 
