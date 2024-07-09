@@ -6,6 +6,7 @@ index = 6
 video_path = f'/lums/new_folder/gatherFrames/gatherVids/night/New_output_N2.avi'
 # csv_filepath = f"/lums/new_folder/vehicle_counting/countingCode/GT/vid_{index}.csv"
 csv_filepath = f"/lums/new_folder/vehicle_counting/countingCode/GT/vid_N2.csv"
+path_to_model = "/lums/new_folder/vehicle_counting/yolov8x_augmentedData_new2.engine"
 
 ## set line coords here.
 x1, y1, x2, y2 = 450, 436, 1610, 441
@@ -103,7 +104,6 @@ os.environ["CUDA_MODULE_LOADING"] = "LAZY"
 # path_to_model = "/lums/new_folder/vehicle_counting/vehicles_6Classes__OnlyOnNew/v8x_part2/weights/best.pt"
 
 # path_to_model = "/lums/new_folder/vehicle_counting/yolov8m_AugmentedData_new_2.pt"
-path_to_model = "/lums/new_folder/vehicle_counting/yolov8x_augmentedData_new2.engine"
 # path_to_model = "/lums/new_folder/vehicle_counting/yolov8x_augmentedData_new2.pt"
 
 # path_to_model = "/lums/new_folder/vehicle_counting/vehicles_7Classes_augmented_new/v8m4/weights/best.pt"
